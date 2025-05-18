@@ -1,3 +1,4 @@
+// Dalten Hansen-White and Ezekiel Torres
 import './assets/main.css'
 
 import { createApp } from 'vue'

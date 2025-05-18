@@ -1,3 +1,4 @@
+ //Dalten Hansen-White and Ezekiel Torres
 import { defineStore } from "pinia"
 
 export const useTodoListStore = defineStore( 'todoList', {
@@ -7,6 +8,11 @@ export const useTodoListStore = defineStore( 'todoList', {
         id: 0
     }),
 //getters
+getters: { 
+    incomplete() {
+        return this.todoList.filter((t) => !t.completed) //added incompleteness property getter
+    }
+},
     
 //actions
     actions: {

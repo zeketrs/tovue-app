@@ -1,6 +1,7 @@
 <script setup>
 import TodoForm from './TodoForm.vue'
 import TodoList from './TodoList.vue'
+//import ToDoRemoval from './ToDoRemoval.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import TodoList from './TodoList.vue'
         <h1>To Do List</h1>
         <todo-form />
         <todo-list />
+        <!-- <to-do-removal /> -->
     </div>
 </template>
 
@@ -18,4 +20,5 @@ import TodoList from './TodoList.vue'
     width: 30vw;
     background-color: #f7f9fc;
 }
+
 </style>

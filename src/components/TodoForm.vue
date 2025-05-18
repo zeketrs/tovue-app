@@ -1,3 +1,4 @@
+<!-- Dalten Hansen-White and Ezekiel Torres-->
 <script setup>
 import { ref } from 'vue'
 import { useTodoListStore } from '@/stores/todoList'
@@ -20,6 +21,7 @@ function addItemAndClear(item) {
         <form @submit.prevent="addItemAndClear(todo)">
             <input v-model="todo" type="text" /> 
             <button>Add</button>
+            <button @click="store.$reset">Dump</button> <!--added dump button to clear form -->
         </form>
     </div>
 </template>
@@ -35,14 +37,14 @@ input {
     width: 50%;
 }
 button {
-    margin-left: 30px;
+    margin-left: 10px;
     background-color: #2f6089;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     font-weight: 800;
     color: white;
-    width: 15%;
+    width: 20%;
 }
 .alert-div {
     min-height: 25px;
